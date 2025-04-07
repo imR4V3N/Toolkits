@@ -1,6 +1,30 @@
 # Toolkits
 This is a small tool created with java like a generic dao allowing crud management, a small servlet framework and file management such as import or export of csv file, pdf or even file upload or file downloadThis is a small tool created with java like a generic dao allowing crud management, a small servlet framework and file management such as import or export of csv file, pdf or even file upload or file download
 
+## Installation
+To use this project: 
+- You need to install these libraries.
+````xml
+<dependency>
+    <groupId>com.itextpdf</groupId>
+    <artifactId>itextpdf</artifactId>
+    <version>5.5.13.3</version>
+</dependency>
+<dependency>
+    <groupId>com.opencsv</groupId>
+    <artifactId>opencsv</artifactId>
+    <version>5.7.1</version>
+</dependency>
+<dependency>
+    <groupId>jakarta.servlet</groupId>
+    <artifactId>jakarta.servlet-api</artifactId>
+    <version>6.0.0</version>
+</dependency>
+```` 
+- To export this project as a JAR, simply run the **Jar.bat** script.
+
+**Of course, don't forget to download the source code first.**
+
 ### Here are some code examples using this tool
 
 - #### Generic Dao
