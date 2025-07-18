@@ -1,9 +1,13 @@
 # Toolkits
-This is a small tool created with java like a generic dao allowing crud management, a small servlet framework and file management such as import or export of csv file, pdf or even file upload or file downloadThis is a small tool created with java like a generic dao allowing crud management, a small servlet framework and file management such as import or export of csv file, pdf or even file upload or file download
+
+This is a small tool created with java like a generic dao allowing crud management, a small servlet framework and file management such as import or export of csv file, pdf or even file upload or file downloadThis is a small tool created with java like a generic dao allowing crud management, a small servlet framework and file management such as file upload or file download
 
 ## Installation
-To use this project: 
+
+To use this project:
+
 - You need to install these libraries.
+
 ````xml
 <dependency>
     <groupId>com.itextpdf</groupId>
@@ -20,7 +24,8 @@ To use this project:
     <artifactId>jakarta.servlet-api</artifactId>
     <version>6.0.0</version>
 </dependency>
-```` 
+````
+
 - To export this project as a JAR, simply run the **Jar.bat** script.
 
 **Of course, don't forget to download the source code first.**
@@ -58,7 +63,7 @@ public class Type extends Dao{
         Type[] types = this.read(query, connection).toArray(new Type[]{});
         if (types.length == 0) {
             return null;
-            
+          
         }
         return types[0];
     }

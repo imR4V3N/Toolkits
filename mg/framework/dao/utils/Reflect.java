@@ -80,11 +80,11 @@ public class Reflect {
                 result = value;
             }
 
-            if (clazz == Integer.TYPE) {
+            if (clazz == Integer.TYPE || clazz == Integer.class) {
                 result = Integer.valueOf(value);
             }
 
-            if (clazz == Double.TYPE) {
+            if (clazz == Double.TYPE || clazz == Double.class) {
                 result = Double.valueOf(value);
             }
 
