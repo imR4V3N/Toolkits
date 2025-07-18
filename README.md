@@ -26,7 +26,7 @@ To use this project:
 </dependency>
 ````
 
-- To export this project as a JAR, simply run the **Jar.bat** script.
+- To export this project as a JAR, simply run the **Jar.bat** or **Jar.sh** script.
 
 **Of course, don't forget to download the source code first.**
 
@@ -63,7 +63,7 @@ public class Type extends Dao{
         Type[] types = this.read(query, connection).toArray(new Type[]{});
         if (types.length == 0) {
             return null;
-          
+        
         }
         return types[0];
     }
